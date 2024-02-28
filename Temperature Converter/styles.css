@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: linear-gradient(45deg, #848688 25%, #ffffff 25%, #838282 75%, #f8f9fa 75%);
+    transition: background-color 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .converter {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(220, 218, 235, 0.884);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+    max-width: 400px;
+    width: 100%;
+    animation: temperatureEffect 4s infinite alternate;
+  }
+  
+  .converter:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+
+  @keyframes temperatureEffect {
+    0% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="number"] {
+    width: 100px;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #555;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="number"]:focus {
+    border-color: #66afe9;
+  }
+  
+  select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+    transition: border-color 0.3s;
+  }
+  
+  select:focus {
+    border-color: #66afe9;
+  }
+  
+  .buttons {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .output {
+    text-align: center;
+  }
+  
+  .conversion-label {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  .conversion-result {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  .result {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .result-value {
+    font-weight: bold;
+    color: #007bff;
+    background-color: #f8f9fa;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  
